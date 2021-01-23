@@ -1,0 +1,60 @@
+﻿body {
+    height:90vh;
+}
+.pantalla {
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+    justify-content:space-between;
+}
+
+.parteGrafica {
+    display: flex;
+    justify-content:space-around;
+    margin-left:2%;
+}
+
+
+
+.resultado p {
+    text-align:center;
+}
+
+.titulo2 h1 {
+        text-align:center;
+    }
+
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+.conversorArabigo {
+    margin-right: 1%;
+}
+.resultado img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.conversorArabigo{
+    
+    align-content:center;
+}
+
+
+
+
+
+

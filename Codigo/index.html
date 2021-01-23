@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Conversor</title>
+    <script src="javascript/script.js"></script>
+    <link rel="stylesheet" href="estilos/estilo.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body background="imagenes/fondo.png">
+    <div class="pantalla">
+        <div class="conversorArabigo">
+            <h1>Convertidor de Arábigo a Maya</h1>
+            <p>Ingrese un número: </p>
+            <input type="number" id="num" />
+            <button type="button" onclick="convNum(num)">Convertir</button>
+
+            <table id="nivelesArab">
+                <tr>
+                    <td><img id="nivel3" src="" /></td>
+                </tr>
+                <tr>
+                    <td><img id="nivel2" src="" /></td>
+                </tr>
+                <tr>
+                    <td><img id="nivel1" src="" /></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div>
+            <div class="titulo2">
+                <h1>Convertidor de Maya a Arábigo</h1>
+            </div>
+            <div class="parteGrafica">
+                <div class="selUsuario">
+                    <table id="tablaMayaArab">
+                        <tr>
+                            <td><img name="0" src="imagenes/thumbnails/0.png" onclick="seleccion(this)" /></td>
+                            <td><img name="1" src="imagenes/thumbnails/1.png" onclick="seleccion(this)" /></td>
+                            <td><img name="2" src="imagenes/thumbnails/2.png" onclick="seleccion(this)" /></td>
+                            <td><img name="3" src="imagenes/thumbnails/3.png" onclick="seleccion(this)" /></td>
+                            <td><img name="4" src="imagenes/thumbnails/4.png" onclick="seleccion(this)" /></td>
+                        </tr>
+                        <td><img name="5" src="imagenes/thumbnails/5.png" onclick="seleccion(this)" /></td>
+                        <td><img name="6" src="imagenes/thumbnails/6.png" onclick="seleccion(this)" /></td>
+                        <td><img name="7" src="imagenes/thumbnails/7.png" onclick="seleccion(this)" /></td>
+                        <td><img name="8" src="imagenes/thumbnails/8.png" onclick="seleccion(this)" /></td>
+                        <td><img name="9" src="imagenes/thumbnails/9.png" onclick="seleccion(this)" /></td>
+
+                        <tr>
+                            <td><img name="10" src="imagenes/thumbnails/10.png" onclick="seleccion(this)" /></td>
+                            <td><img name="11" src="imagenes/thumbnails/11.png" onclick="seleccion(this)" /></td>
+                            <td><img name="12" src="imagenes/thumbnails/12.png" onclick="seleccion(this)" /></td>
+                            <td><img name="13" src="imagenes/thumbnails/13.png" onclick="seleccion(this)" /></td>
+                            <td><img name="14" src="imagenes/thumbnails/14.png" onclick="seleccion(this)" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><img name="15" src="imagenes/thumbnails/15.png" onclick="seleccion(this)" /></td>
+                            <td><img name="16" src="imagenes/thumbnails/16.png" onclick="seleccion(this)" /></td>
+                            <td><img name="17" src="imagenes/thumbnails/17.png" onclick="seleccion(this)" /></td>
+                            <td><img name="18" src="imagenes/thumbnails/18.png" onclick="seleccion(this)" /></td>
+                            <td><img name="19" src="imagenes/thumbnails/19.png" onclick="seleccion(this)" /></td>
+                        </tr>
+
+                    </table>
+                    <div class="btnsUsuario">
+                        <button type="button" onclick="enviar()" disabled="true" id="btnConvM">Convertir </button>
+                        <button type="button" onclick="limpiar()" disabled="true" id="btnLimpiar">Limpiar</button>
+                    </div>
+                </div>
+
+
+
+                <div class="resultado">
+
+                    <table id="nivelesMaya">
+                        <tr>
+                            <td><img id="nivel3m" src="" /></td>
+                        </tr>
+                        <tr>
+                            <td><img id="nivel2m" src="" /></td>
+                        </tr>
+                        <tr>
+                            <td><img id="nivel1m" src="" /></td>
+                        </tr>
+                    </table>
+
+                    <p>El valor del número es: </p>
+                    <input type="text" id="numConv" disabled="disabled" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
